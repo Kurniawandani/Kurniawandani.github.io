@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+}
+/*-------Header-------*/
+header {
+  z-index: 9;
+  position: fixed;
+  width: 100%;
+  background: #303030;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  height: 85px;
+}
+.logo {
+  flex: 1;
+}
+.logo img {
+  height: 120px;
+}
+nav {
+  flex: 1;
+}
+
+.nav-links {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-family: "Poppins";
+  color: #ffffff;
+}
+.nav-links li a:hover {
+  color: #cfac71;
+}
+.btn-join {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  padding: 0 40px 10px 0;
+}
+.btn-join a {
+  text-decoration: none;
+  font-family: "Poppins";
+  line-height: 36px;
+  color: #ffffff;
+  background: #cfac71;
+  padding: 2px 40px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+/*------------Main------*/
+main {
+  display: flex;
+  flex-direction: column;
+}
+.section1,
+.section2,
+.section3,
+.section4 {
+  width: 100%;
+}
+/* section 1 */
+.section1 {
+  background-image: url(../img/hotel\ room\ 1.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 600px;
+}
+
+.color {
+  height: 600px;
+  background: rgb(0, 0, 0, 0.5);
+}
+.typhograpy {
+  font-family: "Old Standard TT";
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+}
+.typhograpy h1 {
+  font-weight: 200;
+}
+.title-1 {
+  font-size: 64px;
+  letter-spacing: 10px;
+}
+.title-2 {
+  font-size: 46px;
+  letter-spacing: 9px;
+}
+
+.booking {
+  transform: translateY(-150px);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.booking input {
+  color: #a5a3a3;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  width: 250px;
+  height: 55px;
+  padding: 5px 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+.btn-book {
+  width: 200px !important;
+  background: #cfac71;
+  color: #ffffff !important;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* section 2 */
+.section2 {
+  font-family: "Old Standard TT";
+  height: 500px;
+  background: #f5f6fa;
+  display: flex;
+}
+
+.img-s2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-s2 img {
+  height: 80%;
+}
+
+.text-s2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.text-s2 h1 {
+  transform: translate(-150px, -60px);
+}
+
+/* section 3 */
+.section3 {
+  font-family: "Old Standard TT";
+  background: #ffffff;
+  height: 700px;
+  display: grid;
+  grid-template-rows: 100px 480px 120px;
+}
+
+.title-s3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-s3 h5 {
+  font-size: 32px;
+}
+
+.card-room {
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+
+.card1,
+.card2,
+.card3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1 img,
+.card2 img,
+.card3 img {
+  height: 350px;
+  width: 350px;
+}
+.card-room h5 {
+  transform: translateX(-118px);
+}
+.card-room p {
+  color: #cfac71;
+  transform: translate(-120px, 10px);
+}
+
+.btn-s3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-s3 a {
+  border-radius: 10px;
+  font-family: "Poppins";
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #cfac71;
+  padding: 20px 60px;
+  text-decoration: none;
+}
+
+/* section 4 */
+.section4 {
+  font-family: "Old Standard TT";
+  display: grid;
+  grid-template-rows: 100px 300px;
+  background: #f5f6fa;
+  height: 400px;
+}
+
+.section4 p {
+  font-size: 14px;
+}
+
+.title-s4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-services {
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 20px;
+}
+.card-services h5 {
+  font-weight: bold;
+}
+.card-services img {
+  margin: 0 0 20px 150px;
+  position: center;
+  height: 60px;
+  border-color: #cfac71;
+}
+
+/*-------- Footer -------*/
+footer {
+  display: flex;
+  background: #303030;
+  height: 200px;
+  overflow: hidden;
+}
+
+footer img {
+  width: 80%;
+}
