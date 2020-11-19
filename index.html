@@ -23,26 +23,33 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
-    <header>
-      <div class="logo"><a href="#"><img src="./assets/img/Logo 1.png" /></a></div>
       <nav>
+        <div class="logo">
+          <a href="#"><img src="./assets/img/Logo 1.png" /></a>
+        </div>
         <ul class="nav-links">
           <li><a href="#">About Us</a></li>
           <li><a href="#">Rooms</a></li>
           <li><a href="#">Facilities</a></li>
+          <li><button class="add">Join US</button></li>
         </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
       </nav>
-      <div class="btn-join add">
-        <a href="#">Join Us</a>
-      </div>
-    </header>
+ 
     <main>
       <div class="section1">
-        <div class="color"></div>
+        <div class="color">
+          <div class="opac"></div>
+          <img src="./assets/img/hotel room 1.jpg" alt="">
+        </div>
         <div class="typhograpy">
           <h1 class="title-1">DISCOVER</h1>
           <h1 class="title-2">YOUR ROOM</h1>
-          <h1>Comfy Like Home</h1>
+          <h1 class="title-3">Comfy Like Home</h1>
         </div>
         <div class="booking">
           <input type="text" placeholder="Check In" id="datepicker" class="link" autocomplete="off"/>
@@ -67,23 +74,27 @@
         <div class="card-room">
           <div class="card1">
             <img src="./assets/img/Single Room.jpg" >
-            <p>Price Rp.xxxxx</p>
             <h5>Single Room</h5>
+            <p>Price Rp.xxxxx</p>
+            
           </div>
           <div class="card2">
             <img src="./assets/img/Double Room.jpg" >
-            <p>Price Rp.xxxxx</p>
             <h5>Double Room</h5>
+            <p>Price Rp.xxxxx</p>
+            
           </div>
           <div class="card3">
             <img src="./assets/img/Family Room.jpg" >
-            <p>Price Rp.xxxxx</p>
             <h5>Family Room</h5>
+            <p>Price Rp.xxxxx</p>
+            
+          </div>
+          <div class="btn-s3">
+            <a href="#"> View All Rooms</a>
           </div>
         </div>
-        <div class="btn-s3">
-          <a href="#"> View All Rooms</a>
-        </div>
+        
       </div>
       <div class="section4">
         <div class="title-s4"><h5><b>Our</b> <i>Services</i></h5></div>
@@ -94,13 +105,13 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Explicabo error voluptates inventore dolores eveniet .<br> architecto voluptate! Nisi voluptas nostrum mollitia <br> repellat vero sed ullam atque explicabo.</p>
           </div>  
 
-          <div class="Restaurant">
+          <div class="restaurant">
           <img src="./assets/img/fork.svg">
           <h5>Restaurant</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Explicabo error voluptates inventore dolores eveniet .<br> architecto voluptate! Nisi voluptas nostrum mollitia <br> repellat vero sed ullam atque explicabo.</p>
           </div>  
 
-          <div class="24 Hours Reception">
+          <div class="reception">
           <img src="./assets/img/24-hours.svg">
           <h5>24 Hours Reception</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Explicabo error voluptates inventore dolores eveniet .<br> architecto voluptate! Nisi voluptas nostrum mollitia <br> repellat vero sed ullam atque explicabo.</p>
@@ -114,11 +125,29 @@
         <img src="./assets/img/Logo 1.png" >
       </div>
 
-      <div class="contact">
-
+      <div class="address">
+        <img src="./assets/img/placeholder.svg" >
+        <p>Jl.Jati Tengah </p>
+      </div>
+      <div class="email">
+        <img src="./assets/img/email.svg" >
+        <p>Info@sungin.com</p>
+      </div>
+      <div class="phone">
+        <img src="./assets/img/phone.svg" >
+        <p>+62 21 87879889</p>
       </div>
 
+      <div class="social">
+        <h5>Follow Us On</h5>
+        <a href="#"><img src="./assets/img/instagram.svg" alt=""></a>
+        <a href="#"><img src="./assets/img/facebook.svg" alt=""></a>
+        <a href="#"><img src="./assets/img/linkedin.svg" alt=""></a>
+      </div>
     </footer>
+    <div class="tagged">
+     <label  >Created by <a href="https://github.com/Kurniawandani">Kurniawan Dani</a></label>
+    </div>
 
 
     <!-- modal -->
@@ -148,7 +177,7 @@
           </div>
 
           <div class="login">
-              <span class="close">+</span>
+              <p class="close">+</p>
               <div class="title-login">
                   <h5>Login</h5>
               </div>

@@ -26,3 +26,12 @@
     modalClose.addEventListener('click',(e)=>{
     modalBg.classList.remove('modalopen');
     })
+
+    //---------Update Stuff----------//
+
+    //----NavSlide
+    const navOpen = document.querySelector('.burger');
+    const navShow = document.querySelector('.nav-links');
+    navOpen.addEventListener('click',(e)=>{
+      navShow.classList.toggle('nav-active');
+    })

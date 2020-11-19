@@ -8,16 +8,18 @@
 }
 
 .modal {
+  z-index: 3;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: #f5f6fa;
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s ease;
   display: grid;
+  overflow-y: scroll;
 }
 
 .modal-section {
@@ -27,6 +29,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .modalopen {
@@ -135,4 +139,93 @@ input[type="password"] {
   top: 0;
   right: 10px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 786px) {
+  .modal {
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-section {
+    display: grid;
+    justify-content: start;
+    align-items: flex-start;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .modalopen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .register {
+    height: 450px;
+  }
+  .title-regist h5 {
+    font-size: 18px;
+    padding: 2px 20px;
+  }
+  .paragraph {
+    transform: translateY(-35px);
+  }
+  .paragraph p:nth-child(3) {
+    text-align: left;
+    padding-left: 30px;
+  }
+  .paragraph li {
+    font-size: 12px;
+  }
+  .paragraph p {
+    text-align: center;
+    font-size: 10px;
+    margin: 0 0;
+    padding: 0 15px;
+  }
+  .btn-regist {
+    transform: translateY(-85px);
+  }
+  .btn-regist a:hover {
+    background: transparent;
+    border: #cfac71 solid 1px;
+  }
+
+  .btn-regist a {
+    transition: 0.2s ease;
+    text-decoration: none;
+    padding: 8px 35px;
+  }
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+  }
+
+  .title-login {
+    font-size: 16px;
+  }
+
+  .box {
+    margin: 20px 0;
+  }
+
+  .inp-email,
+  .inp-pass {
+    width: 80%;
+    padding: 10px 2px;
+  }
+  .inp-pass {
+    margin-top: 20px;
+  }
+  .close {
+    font-size: 28px;
+    transform: rotate(45deg);
+    font-weight: normal;
+    right: 10px;
+    color: #ffffff;
+    position: absolute;
+    top: -55vh;
+    cursor: pointer;
+  }
 }
