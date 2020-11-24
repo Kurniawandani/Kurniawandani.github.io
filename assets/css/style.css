@@ -229,7 +229,7 @@ main {
 }
 .card-room p {
   color: #cfac71;
-  transform: translate(-120px, 10px);
+  transform: translate(-110px, 10px);
 }
 
 .btn-s3 {
@@ -291,7 +291,7 @@ main {
 footer {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: baseline;
   background: #303030;
   height: 130px;
   overflow: hidden;
