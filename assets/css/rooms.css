@@ -136,6 +136,7 @@ main {
 .tittle-room {
   transform: translate(20px, -40px);
   font-size: 28px;
+  font-family: "Old Standard TT";
   font-style: italic;
   color: #000000;
 }

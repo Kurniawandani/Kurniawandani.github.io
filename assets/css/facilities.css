@@ -110,6 +110,7 @@ main {
   height: 100px;
 }
 .title-facilities h5 {
+  font-family: "Old Standard TT";
   font-style: italic;
   font-size: 30px;
 }
