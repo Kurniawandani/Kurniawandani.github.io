@@ -75,91 +75,182 @@ nav {
 }
 
 /*------------Main------*/
-main {
-  font-family: "Old Standard TT";
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.img img {
-  width: 70%;
-  height: 70%;
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.8);
-  border-radius: 5px;
-}
-.price {
-  transform: translateY(20px);
-  width: 250px;
-  display: flex;
-  justify-content: space-between;
+.wrapper {
+  font-family: "Poppins";
+  width: 100%;
+  height: 110vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.price p {
-  font-size: 20px;
-  color: #bb9a62;
-}
-
-.room1,
-.room2,
-.room3 {
+.personal-section {
   display: flex;
-  height: 400px;
+  justify-content: center;
+  align-items: center;
 }
-.room-facilities,
-.room-desc,
-.guest {
+.personal-info {
+  width: 500px;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 1;
-}
-.room-facilities li {
-  line-height: 30px;
-}
-
-.img {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-}
-
-.room1,
-.room3 {
   background: #f5f6fa;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.8);
 }
-.detail {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.tittle-room {
-  transform: translate(20px, -40px);
-  font-size: 28px;
-  font-style: italic;
-  color: #000000;
-}
-.info-room {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.info-room h5 {
+.title-personal {
+  margin: 0 0 15px 0;
   font-weight: bold;
 }
-.room2 {
-  background: #ffffff;
-  flex-direction: row-reverse;
+.payform {
+  width: 80%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.room2 .tittle-room {
-  transform: translate(50px, -40px);
+.payform input {
+  padding: 2px 10px;
+}
+.payform label {
+  font-size: 14px;
+  margin: 10px 0;
+}
+.date-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+.date-box input {
+  width: 180px;
+}
+.input-date {
+  display: flex;
+  justify-content: space-between;
+}
+.radio-payment {
+  width: 50%;
+}
+.payment {
+  display: flex;
+}
+.radio-pay label {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 0 0 10px;
+  align-items: center;
+}
+
+.btn-bayar {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-bayar input {
+  border-radius: 13px;
+  cursor: pointer;
+  width: 250px;
+  height: 40px;
+  border: none;
+  background: #cfac71;
+  color: #ffffff;
+}
+.btn-bayar input:hover {
+  background: #be9b5d;
+}
+.payment-section h5 {
+  margin-top: 10px;
+}
+.radio-pay img {
+  margin: 0 0 0 8px;
+  width: 40px;
+  height: 40px;
+}
+.input-payment {
+  display: flex;
+  flex-direction: column;
+}
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+.input-box input {
+  width: 400px;
+}
+
+.input-payment input {
+  margin: 10px 0;
+}
+
+.mid-pay {
+  display: flex;
+  flex-direction: column;
+}
+.small-pay {
+  display: flex;
+  justify-content: space-between;
+}
+.select-box {
+  display: flex;
+  flex-direction: column;
+}
+.select-box select {
+  width: 150px;
+}
+
+.fade-room {
+  display: none;
+}
+
+.room-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.room-info {
+  position: relative;
+  height: 500px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  background: #f5f6fa;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.8);
+  justify-content: space-around;
+  align-items: center;
+}
+.title-room h5 {
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+
+.img-room img {
+  width: 250px;
+  height: 200px;
+}
+.img-room h5 {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+.desc-room {
+  width: 300px;
+}
+.expired {
+  width: 120px;
+}
+.cvv {
+  width: 90px;
+}
+.prices {
+  display: flex;
+  justify-content: space-between;
+}
+.total {
+  font-weight: bold;
+}
 /*-------- Footer -------*/
 footer {
   display: flex;

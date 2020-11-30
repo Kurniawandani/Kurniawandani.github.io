@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/logo-title.png" type="image/x-icon">
+    <title>Sungin Hotel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="./assets/css/payment.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <body>
+      <nav>
+        <div class="logo">
+          <a href="index.html"><img src="./assets/img/Logo 1.png" /></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="About-us.html">About Us</a></li>
+          <li><a href="Rooms.html">Rooms</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><button class="add">Join US</button></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+ 
+    <main>
+      <div class="wrapper">
+        <div class="personal-section">
+          <div class="personal-info">
+          <div class="title-personal">
+            <h5>Personal Info</h5>
+          </div>
+          <form class="payform" action="#" method="post">
+            <div class="input-section">
+              <div class="input-user">
+                <div class="input-box">
+                  <label for="user">
+                      Username
+                  </label>
+                  <input type="text" name="username" id="user">
+              </div>
+              <div class="input-box">
+                  <label for="email">
+                      Email
+                  </label>
+                  <input type="email" name="email" id="email">
+               </div>
+               <div class="input-date">
+                <div class="date-box">
+                  <label for="checkin">
+                      Check In
+                  </label>
+                  <input type="date" name="chechkin" id="checkin">
+              </div>
+              <div class="date-box">
+                  <label for="checkout">
+                      Check Out
+                  </label>
+                  <input type="date" name="checkout" id="checkout">
+              </div>
+              </div>
+              <div class="select-box">
+                <label for="room">Rooms</label>
+                <select id="room" >
+                  <option value="">- -</option>
+                  <option value="singleroom">Single Room</option>
+                  <option value="doubleroom">Double Room</option>
+                  <option value="familyroom">Family Room</option>
+                </select>
+              </div>
+              </div>
+              
+              <div class="payment-section">
+                <h5>Payment</h5>
+                <div class="payment">
+                <div class="radio-payment">
+                  <div class="radio-pay">
+                    <label>
+                      <input type="radio" name="payment">
+                      <img src="./assets/img/visa.svg">
+                      </label>
+                  </div>
+                  <div class="radio-pay">
+                    <label>
+                      <input type="radio" name="payment">
+                      <img src="./assets/img/mastercard.svg">
+                      </label>
+                  </div>
+                  <div class="radio-pay">
+                  <label>
+                    <input type="radio" name="payment">
+                    <img src="./assets/img/paypal.svg">
+                    </label>
+                </div>
+              </div>
+              <div class="input-payment">
+                <div class="mid-pay">
+                <input type="text" placeholder="*Name On Card">
+                <input type="number" placeholder="*Card Number">
+              </div>
+              <div class="small-pay">
+                <input class="expired" type="number" placeholder="*Expired">
+                <input class="cvv" type="number" placeholder="*CVV">
+              </div>
+              </div>
+            </div>
+              </div>
+            </div>
+            <div class="btn-bayar">
+            <input type="submit" value="BAYAR">
+          </div>
+          </form>
+        </div>
+        </div>
+        <div class="room-section">
+          <!-- start -->
+          <div id="singleroom" class="fade-room">
+           <div class="room-info">
+           <div class="title-room">
+            <h5>Room Info</h5>
+           </div>
+           <div class="img-room">
+            <img src="./assets/img/Single Room.jpg" >
+            <h5>Single Room</h5>
+           </div>
+           <div class="desc-room">
+            <div class="prices">
+              <p>Night(s)</p>
+              <p>1</p>
+            </div>
+            <div class="prices">
+              <p>Price</p>
+              <p>Rp 500.000</p>
+            </div>
+            <div class="prices">
+              <p>Tax(10%)</p>
+              <p>Rp 50.000</p>
+            </div>
+            <div class="prices total">
+              <p>Total</p>
+              <p>Rp 450.000</p>
+            </div>
+          </div>
+          </div>
+        </div>
+          <!-- Batas -->
+          <!-- start -->
+          <div id="doubleroom" class="fade-room">
+           <div class="room-info">
+           <div class="title-room">
+            <h5>Room Info</h5>
+           </div>
+           <div class="img-room">
+            <img src="./assets/img/Double Room.jpg" >
+            <h5>Double Room</h5>
+           </div>
+           <div class="desc-room">
+            <div class="prices">
+              <p>Night(s)</p>
+              <p>1</p>
+            </div>
+            <div class="prices">
+              <p>Price</p>
+              <p>Rp 800.000</p>
+            </div>
+            <div class="prices">
+              <p>Tax(10%)</p>
+              <p>Rp 80.000</p>
+            </div>
+            <div class="prices total">
+              <p>Total</p>
+              <p>Rp 720.000</p>
+            </div>
+          </div>
+          </div>
+        </div>
+          <!-- Batas -->
+          <!-- start -->
+          <div id="familyroom" class="fade-room">
+           <div class="room-info">
+           <div class="title-room">
+            <h5>Room Info</h5>
+           </div>
+           <div class="img-room">
+            <img src="./assets/img/Family Room.jpg" >
+            <h5>Family Room</h5>
+           </div>
+           <div class="desc-room">
+            <div class="prices">
+              <p>Night(s)</p>
+              <p>1</p>
+            </div>
+            <div class="prices">
+              <p>Price</p>
+              <p>Rp 1000.000</p>
+            </div>
+            <div class="prices">
+              <p>Tax(10%)</p>
+              <p>Rp 100.000</p>
+            </div>
+            <div class="prices total">
+              <p>Total</p>
+              <p>Rp 900.000</p>
+            </div>
+          </div>
+          </div>
+        </div>
+          <!-- Batas -->
+          
+          </div>
+        </div>
+       
+         </div>
+       </div>
+      </div>
+      
+    </main>
+    <footer>
+      <div class="img-foot">
+        <img src="./assets/img/Logo 1.png" >
+      </div>
+
+      <div class="address">
+        <img src="./assets/img/placeholder.svg" >
+        <p>Jl.Jati Tengah </p>
+      </div>
+      <div class="email">
+        <img src="./assets/img/email.svg" >
+        <p>Info@sungin.com</p>
+      </div>
+      <div class="phone">
+        <img src="./assets/img/phone.svg" >
+        <p>+62 21 87879889</p>
+      </div>
+
+      <div class="social">
+        <h5>Follow Us On</h5>
+        <a href="#"><img src="./assets/img/instagram.svg" alt=""></a>
+        <a href="#"><img src="./assets/img/facebook.svg" alt=""></a>
+        <a href="#"><img src="./assets/img/linkedin.svg" alt=""></a>
+      </div>
+    </footer>
+    <div class="tagged">
+     <label  >Created by <a href="https://github.com/Kurniawandani">Kurniawan Dani</a></label>
+    </div>
+
+
+    <!-- modal -->
+    <div class="modal">
+      <div class="modal-section">
+          <div class="register">
+              
+              <div class="title-regist">
+                  <h5 class="title-regist">Become a Member</h5>
+              </div>
+                  
+              <div class="paragraph">
+                  <p>Buat akunmu dan rasakan manfaat</p>
+                  <p>yang bisa didapatkan setelah memiliki</p>
+                  <p>akun :</p>
+                  <ul>
+                      <li>Room Service Discount</li>
+                      <li>Loyalty Reward</li>
+                      <li>Food & Beverages Discount</li>
+                      <li>Room Discount</li>
+                  </ul>
+              </div>
+
+              <div class="btn-regist">
+                  <a href="register.html">Register</a>
+              </div>    
+          </div>
+
+          <div class="login">
+              <p class="close">+</p>
+              <div class="title-login">
+                  <h5>Login</h5>
+              </div>
+              
+              <form class="box" method="post">
+                  <div class="inp-email">
+                      <label>
+                          Email
+                          <br>
+                      <input type="email" name="email">
+                      </label>
+                  </div>
+                  
+                  <div class="inp-pass">
+                      <label>
+                          Password
+                          <br>
+                      <input type="password" name="password">
+                      </label>
+                  </div>
+                  <input class="btn-signin" type="submit" value="Sign In" >
+              </form>
+          </div>
+          
+      </div>
+  </div>
+
+    <!-- JS -->
+    <script src="https://kit.fontawesome.com/88e5560780.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./assets/js/bootstrap-datepicker.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#room").on('change',function(){
+          $(".fade-room").hide();
+          $("#" + $(this).val()).fadeIn(500);
+        });
+      });
+    </script>
+  </body>
+</html>

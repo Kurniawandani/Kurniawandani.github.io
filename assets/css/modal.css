@@ -101,7 +101,7 @@
 
 .inp-email,
 .inp-pass {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   padding: 10px 5px;
   line-height: 40px;
@@ -111,8 +111,8 @@
 .inp-pass {
   transform: translateY(-60px);
 }
-input[type="email"],
-input[type="password"] {
+.inp-email input,
+.inp-pass input {
   border: 1px solid #000000;
   padding: 3px 10px;
   width: 100%;
@@ -127,6 +127,7 @@ input[type="password"] {
   border: none;
   border-radius: 15px;
   background: #303030;
+  cursor: pointer;
   color: #ffffff;
   transform: translateY(-30px);
 }

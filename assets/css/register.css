@@ -76,90 +76,62 @@ nav {
 
 /*------------Main------*/
 main {
-  font-family: "Old Standard TT";
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.img img {
-  width: 70%;
-  height: 70%;
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.8);
-  border-radius: 5px;
-}
-.price {
-  transform: translateY(20px);
-  width: 250px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.price p {
-  font-size: 20px;
-  color: #bb9a62;
-}
-
-.room1,
-.room2,
-.room3 {
-  display: flex;
-  height: 400px;
-}
-.room-facilities,
-.room-desc,
-.guest {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
-.room-facilities li {
-  line-height: 30px;
-}
-
-.img {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-}
-
-.room1,
-.room3 {
   background: #f5f6fa;
+  font-family: "Poppins";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
 }
-.detail {
-  flex: 2;
+
+.box-regist {
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  width: 350px;
+  height: 450px;
+  display: grid;
+  box-shadow: 0 2px 4px 1px #000000;
+  justify-content: center;
+  align-items: center;
+}
+.title h5 {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0 0 0;
+}
+
+.input-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-.tittle-room {
-  transform: translate(20px, -40px);
-  font-size: 28px;
-  font-style: italic;
-  color: #000000;
+.input-box label {
+  padding: 0 0 0 10px;
 }
-.info-room {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+.input-box input {
+  font-size: 14px;
+  width: 240px;
+  height: 30px;
+  padding: 2px 8px;
 }
 
-.info-room h5 {
-  font-weight: bold;
-}
-.room2 {
-  background: #ffffff;
-  flex-direction: row-reverse;
+.btn-daftar {
+  background: #cfac71;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  width: 180px;
+  height: 40px;
+  margin: 0 0 20px 20px;
+  transition: background ease 0.5s;
 }
 
-.room2 .tittle-room {
-  transform: translate(50px, -40px);
+.btn-daftar:hover {
+  background: transparent;
+  color: #cfac71;
+  border: 2px #cfac71 solid;
 }
-
 /*-------- Footer -------*/
 footer {
   display: flex;
